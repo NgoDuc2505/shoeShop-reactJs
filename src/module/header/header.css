@@ -1,0 +1,149 @@
+#myHeader{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.nav{
+    background-color: black;
+    margin-bottom: 50px;
+    padding: 10px 0;
+}
+.nav .nav-link{
+    color: #fff;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+.nav .nav-link:hover{
+    color: lightgoldenrodyellow;
+    font-size: 25px;
+}
+.brand{
+    margin-right: auto;
+}
+.brand a{
+    color: #fff;
+}
+.brand h1 i{
+    transform: rotate(0deg);
+    transition: all .5s;
+}
+.brand:hover h1 i{
+    transform: rotate(180deg);
+}
+.moreAction{
+    margin-left: auto;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.dropdown-menu.show {
+    border-radius: 10px;
+    transform: translate3d(-80%, 60px, 0px)!important;
+    max-width: 310px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(236, 236, 236);
+}
+.dropdown-menu.show a{
+    color: black;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+.dropdown-menu.show a:hover{
+   transform: scale(105%);
+}
+.headerMenu{
+    width: 100%;
+    height: 18px;
+    background-color: gray;
+    margin-bottom: 10px;
+}
+.docGr{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    margin-left: 20px;
+}
+.doc{
+    width: 7px;
+    height:7px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+.dot2{
+    background-color: lime;
+}
+.dot3{
+    background-color: yellow;
+}
+
+
+.cart{
+    transition: all .5s ease;
+}
+.cart:hover{
+     transform: scale(115%);
+}
+.cart:hover .iconDefaut{
+    display: none;
+}
+.cart:hover .iconShow{
+    display: block;
+}
+.iconShow{
+    display: none;
+}
+.iconDefaut{
+    display: block;
+}
+
+.scale{
+    transform: scale(215%);
+}
+.totalOnCart{
+    position: absolute;
+    top: -8px;
+    right: 8px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    color: #ececec;
+    border-radius: 50%;
+    line-height: 20px;
+    z-index: 2;
+    transition: all .3s linear;
+}
+.cartBtn{
+    position: relative;
+}
+.cart{
+    height: 100%;
+}
+
+@media screen and (max-width: 577px) {
+    .brand h1{
+        font-size: 30px;
+    }
+    .nav-link{
+        padding:0.3rem 0.5rem ;
+    }
+}
+@media screen and (max-width: 490px) {
+    .brand h1{
+        font-size: 25px;
+    }
+    .nav .nav-link{
+       font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .brand h1{
+        font-size: 20px;
+    }
+    .nav .nav-link{
+       font-size: 14px;
+    }
+}

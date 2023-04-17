@@ -1,0 +1,37 @@
+#myModal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%) translateY(-50%);
+    width: 80%;
+}
+#myModal::before{
+    content: '';
+    display: block;
+    width: 500%;
+    height: 500%;
+    backdrop-filter: blur(8px);
+    position: fixed;
+    transform: translateX(-9%) translateY(-28%);
+}
+.headingModal{
+    margin-bottom: 35px;
+}
+.left_content{
+    border-right:1px solid transparent!important ;
+    background-color: rgb(208, 224, 239);
+    padding-top: 2rem!important ;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.right_content{
+    border-left:1px solid transparent!important ;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.closeBtn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
