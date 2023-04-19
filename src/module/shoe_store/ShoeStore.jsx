@@ -135,7 +135,7 @@ export default function ShoeStore(prop) {
     
   },[prop.cart])
   return (
-    <div className="container my-5" id='shoeList'>
+    <div className="container-lg my-5" id='shoeList'>
       <div className='shoeStore'>
         <h1>Product List</h1>
         <ProductList

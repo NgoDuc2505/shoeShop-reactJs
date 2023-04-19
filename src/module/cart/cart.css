@@ -1,7 +1,6 @@
 .cart-wrapper{
     background-color: #ececec;
     height: 100vh;
-    width: 50%;
     border-radius: 10px;
     overflow: hidden;
     position: fixed;
@@ -76,9 +75,14 @@
     border-radius: 50%;
     outline: unset;
     border: unset;
-    margin-right: 20px;
+    margin-right: 15px;
 }
-
+.butn2{
+    background-color: yellow;
+}
+.butn3{
+    background-color: lime;
+}
 .cart-footer{
     height: 50px;
 }
@@ -149,6 +153,19 @@
 @media screen and (max-width: 993px) {
     .product-title h3{
      font-size: 20px;
+    }
+    .cart-wrapper{
+        width: 100%;
+    }
+    @keyframes sideShow{
+        0%{
+            width: 0%;
+            opacity: 0;
+        }
+        100%{
+            width: 100%;
+            opacity: 1;
+        }
     }
  }
  @media screen and (max-width: 769px) {

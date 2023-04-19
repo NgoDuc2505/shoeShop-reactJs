@@ -2,6 +2,7 @@
     display: flex;
     height: 100vh;
     padding-top: 150px;
+    margin-bottom: 200px;
 }
 .content{
     background: linear-gradient(to bottom , #f7f1f1 , white);
@@ -18,7 +19,6 @@
 }
 .left_banner{
     width: 40%;
-    font-family: 'Quicksand', sans-serif;
     font-family: 'Titillium Web', sans-serif;
     padding: 50px;
     font-size: 25px;
@@ -73,4 +73,125 @@
 .exploreBtn:hover{
     transform: scale(110%) translateX(20%);
     background: linear-gradient(to bottom right,rgb(255, 255, 255),rgb(233, 228, 225));
+}
+
+@media screen and (max-width: 1400px) {
+    .left_banner{
+        padding: 10px 50px;
+    }
+    .banner{
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1201px){
+    .left_banner h2{
+        font-size: 30px;
+    }
+    .left_banner h3{
+        font-size: 26px;
+    }
+    .left_banner p{
+        font-size: 22px;
+    }
+} 
+@media screen and (max-width: 1050px){
+    .exploreBtn{
+        font-size: 18px;
+        padding: 5px 20px;
+    }
+    .left_banner p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 993px){
+    .content{
+        padding: 16px;
+    }
+    .left_banner h2{
+        font-size: 26px;
+    }
+    .left_banner h3{
+        font-size: 20px;
+    }
+    .left_banner p{
+        font-size: 18px;
+    }
+    .right_banner{
+        height: 80%;
+    }
+}
+@media screen and (max-width: 870px){
+    .content{
+        padding: 12px;
+    }
+    .left_banner h2{
+        font-size: 22px;
+    }
+    .left_banner h3{
+        font-size: 18px;
+    }
+    .left_banner p{
+        font-size: 14px;
+    }
+    .right_banner{
+        height: 65%;
+    }
+    .banner{
+        margin-bottom: 0;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 769px){
+    .left_banner{
+        padding: 5px 20px;
+    }
+    .right_banner .image_banner {
+        width: 90%;
+    }
+    .right_banner{
+        height: 60%;
+    }
+}
+@media screen and (max-width: 670px){
+    .left_banner h3{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .left_banner h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .banner{
+        height: 100%;
+    }
+    .right_banner .image_banner {
+        width: 100%;
+    }
+    .exploreBtn{
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+    .left_banner{
+        width: 50%;
+    }
+    .right_banner{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 577px){
+.banner{
+    flex-direction: column-reverse;
+    padding-top: 90px;
+    width: 100%;
+}
+.right_banner{
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.left_banner{
+    width: 97%;
+    margin: auto;
+}
 }

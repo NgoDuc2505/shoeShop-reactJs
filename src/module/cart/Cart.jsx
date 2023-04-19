@@ -71,6 +71,8 @@ export default function Cart(props) {
             <div className="cart-header">
                 <div className="btn-header">
                     <button className='butn' onClick={() => { setCartClose(true) }}></button>
+                    <button className='butn butn2' onClick={() => { setCartClose(true) }}></button>
+                    <button className='butn butn3' onClick={() => { setCartClose(true) }}></button>
                 </div>
             </div>
             <div className="cart-body">

@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import './footer.css'
+
 export default function Footer() {
   return (
     <div className="myFooter">
-    <div className="container">
+    <div className="container-md">
       <div className='row'>
-        <div className="col-6">
+        <div className="col-sm-6 col-12">
           <div className="contact_list">
             <div className="contact_detail">
               <i className="fa-solid fa-location-dot"></i>
@@ -21,11 +22,13 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-sm-6 col-12">
           <div className="content_right">
-            <h3>Since 2023</h3>
+          <div className="content_right_detail">
+          <h3>Since 2023</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi illo, ipsa similique nam laborum! <br /> <br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, accusantium quia? Molestiae neque numquam unde? Nisi voluptatum cum nihil ut!</p>
+          </div>
             <div className="social_contact">
               <a href="#" className="social_item"><i className="fa-brands fa-facebook"></i></a>
               <a href="#" className="social_item"><i className="fa-brands fa-instagram"></i></a>

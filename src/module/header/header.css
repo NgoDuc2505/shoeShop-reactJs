@@ -139,11 +139,14 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 414px) {
     .brand h1{
         font-size: 20px;
     }
     .nav .nav-link{
        font-size: 14px;
+    }
+    .fa-shoe-prints{
+        display: none;
     }
 }

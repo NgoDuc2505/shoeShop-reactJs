@@ -7,7 +7,7 @@ export default function ProductList(prop) {
         <div className='row'>
             {
                 shoeList.map((product, index) => (
-                    <div className="col-4" key={index}>
+                    <div className="col-12 col-sm-6 col-lg-4 " key={index}>
                         <ProductItem
                         handleCartTotal = {prop.handleCartTotal}
                             data={product}
